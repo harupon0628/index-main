@@ -1,0 +1,106 @@
+body {
+    font-size: 15pt;
+}
+#a{
+    
+}
+#b{
+    text-align: center;
+}
+#c{
+    font-size: 10pt;
+    background: #07A0FAE6;
+}
+#d{
+    color: #FF0000;
+}
+body {
+    font-size: 15pt;
+}
+/* 基本設定 */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* 4つ並べるためのグリッド設定 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 横に2つ */
+    gap: 15px; /* カード同士の隙間 */
+}
+
+/* スマホでは1列にする */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* カード全体のリンク設定 */
+.card {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3; /* 画像の縦横比 */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像を枠いっぱいに収める */
+}
+
+/* 画像の上に乗る文字の設定 */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* うっすら白いフィルター */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-overlay h2 {
+    color: #003366;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+}
+
+.card-overlay h2 span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* ボタン風のデザイン */
+.btn {
+    background-color: #003366;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.card:hover .btn {
+    background-color: #0055aa;
+}
+#j{
+    font-size: 15pt;
+}
+
